@@ -2,9 +2,9 @@
 import express from "express";
 import UserRouter from './users.js'
 import authorRouter from './authors.js'
-import categoriesRouter from './categories.js'
-import companiesRouter from './companies.js'
-import mangasRouter from './mangas.js'
+import categoryRouter from './categories.js'
+import companyRouter from './companies.js'
+import mangaRouter from './mangas.js'
 import chapterRouter from './chapters.js'
 
 const router = express.Router();
@@ -37,9 +37,9 @@ router.get('/carts', (req, res, next) => res.status(200).json({
 // Rutas
 router.use('/auth', UserRouter)
 router.use('/authors', authorRouter)
-router.use('/categories', categoriesRouter)
+router.use('/categories', categoryRouter)
 router.use('/chapters', chapterRouter)
-router.use('/companies', companiesRouter)
-router.use('/mangas', mangasRouter)
+router.use('/companies', companyRouter)
+router.use('/mangas', mangaRouter)
 
 export default router;
