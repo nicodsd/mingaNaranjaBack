@@ -39,7 +39,7 @@ router.use('/auth', UserRouter)
 router.use('/authors', authorRouter)
 router.use('/categories', categoryRouter)
 router.use('/chapters', chapterRouter)
-router.use('/companies', companyRouter) 
+router.use('/companies', companyRouter)
 router.use('/mangas', mangaRouter)
 
 export default router; 
