@@ -1,11 +1,12 @@
 //var express = require('express');
 import express from "express";
-import UserRouter from './users.js'
+import UserRouter from './auth.js'
 import authorRouter from './authors.js'
 import categoryRouter from './categories.js'
 import companyRouter from './companies.js'
 import mangaRouter from './mangas.js'
 import chapterRouter from './chapters.js'
+import resourceRouter from "./resources.js";
 
 const router = express.Router();
 
@@ -40,5 +41,5 @@ router.use('/categories', categoryRouter)
 router.use('/chapters', chapterRouter)
 router.use('/companies', companyRouter)
 router.use('/mangas', mangaRouter)
-
+router.use('/resources', resourceRouter)
 export default router; 
